@@ -8,12 +8,13 @@
 %     de funciones definidas por segmentos.
 %
 %Observación: 
-%     Este laboratorio debe ir acompañado del archivo: my_signal_lab3.m
+%     Este laboratorio debe ir acompañado del archivo: senal_de_prueba.m
 %
 %--------------------------------------------------------------------------
 close all                   %Cierra todas las ventanas.
 clear all                   %Borra todas las variables.
 clc                         %Limpia la consola.
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 %--------------------------------------------------------------------------
 %Configuración de la figura.
 h1 = figure;                %Crea una figura con un manejador h1.
@@ -21,7 +22,7 @@ h1 = figure;                %Crea una figura con un manejador h1.
 set(gcf, 'color', 'white'); %Define el fondo de color blanco. 
 %--------------------------------------------------------------------------
 t=-2:0.001:2;
-y=my_signal_lab3(t);             %Señal de referencia.
+y=senal_de_prueba(t);             %Señal de referencia.
 subplot(2,2,1)
 plot(t,y,'b')
 title('y(t)')
@@ -29,7 +30,7 @@ xlabel('Tiempo [s]')
 ylabel('Amplitud')
 grid on; 
 %--------------------------------------------------------------------------
-y2=my_signal_lab3(2*t);             
+y2=senal_de_prueba(2*t);             
 subplot(2,2,2)
 plot(t,y2,'r')
 title('y(2t)')
@@ -38,7 +39,7 @@ ylabel('Amplitud')
 grid on; 
 %--------------------------------------------------------------------------
 subplot(2,2,3)
-y3=my_signal_lab3(t-1);             
+y3=senal_de_prueba(t-1);             
 plot(t,y3,'k')
 title('y(t-1)')
 xlabel('Tiempo [s]')
@@ -46,7 +47,7 @@ ylabel('Amplitud')
 grid on; 
 %--------------------------------------------------------------------------              
 subplot(2,2,4)
-y3=my_signal_lab3(2*t-1);             
+y3=senal_de_prueba(2*t-1);             
 plot(t,y3,'g')
 title('y(2t-1)')
 xlabel('Tiempo [s]')

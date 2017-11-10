@@ -7,12 +7,13 @@
 %
 %Observación: 
 %     Este laboratorio debe ir acompañado de los archivos: 
-%     my_signal_lab3.m
+%     senal_de_prueba.m
 %     funcion_rectangular.m
 %--------------------------------------------------------------------------
 close all                   %Cierra todas las ventanas.
 clear all                   %Borra todas las variables.
 clc                         %Limpia la consola.
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 %--------------------------------------------------------------------------
 %Graficando las señales de entrada.
 %--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ delta_tao=  0.01;
 tao      = min_t:delta_tao:max_t;     %Vector de tiempo 
 
 x=funcion_rectangular(tao);  
-h=my_signal_lab3(tao); 
+h=senal_de_prueba(tao); 
 
 h1 = figure; 
 set(gcf, 'color', 'white');   
@@ -52,7 +53,7 @@ for t=min_t:delta_tao:max_t      %Valor del tiempo [s] en el que se quiere
                                  %y(t) = x(t) convolucionado con h(t)
     %----------------------------------------------------------------------                    
     x=funcion_rectangular(tao);   
-    h=my_signal_lab3(t-tao);  
+    h=senal_de_prueba(t-tao);  
     x_prod_h   = x.*h;                         %Esta señal es la que se debe integrar para obtener la convolución de x con h.
     
     y(1,indice)     = delta_tao*sum(x_prod_h); %Aproximación númérica de la integral

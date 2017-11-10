@@ -7,12 +7,13 @@
 %
 %Observación: 
 %     Este laboratorio debe ir acompañado de los archivos: 
-%     my_signal_lab3.m
+%     senal_de_prueba.m
 %     obtener_componente_par_e_impar_de_una_funcion.m
 %--------------------------------------------------------------------------
 close all                   %Cierra todas las ventanas.
 clear all                   %Borra todas las variables.
 clc                         %Limpia la consola.
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 %--------------------------------------------------------------------------
 %Configuración de la figura.
 h1 = figure;                %Crea una figura con un manejador h1.
@@ -22,12 +23,12 @@ set(gcf, 'color', 'white'); %Define el fondo de color blanco.
 %--------------------------------------------------------------------------
 t=-2:0.001:2;               %Vector de tiempo [s]
 
-f = @my_signal_lab3;        %Manejador de la función que genera y(t).
+f = @senal_de_prueba;        %Manejador de la función que genera y(t).
 
 [y_par,y_impar]=obtener_componente_par_e_impar_de_una_funcion(f,t);
 
 %--------------------------------------------------------------------------
-y=my_signal_lab3(t);             %Señal de referencia.
+y=senal_de_prueba(t);             %Señal de referencia.
 subplot(2,2,1)
 plot(t,y,'b')
 title('Señal original y(t)')

@@ -8,10 +8,12 @@
 %Observación: 
 %     Este laboratorio debe ir acompañado de los archivos: 
 %     crear_funcion_periodica.m
+%     escalon_unitario.m
 %--------------------------------------------------------------------------
 close all                   
 clear all                   
-clc                         
+clc                 
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 %Construyendo una señal periódica a partir de una señal aperiódica.
@@ -26,7 +28,7 @@ A         = 1.0;   %Amplitud del pulso
 t_on      = 1.0;   %Tiempo en alto del pulso [s]
 T         = 2.0;   %Periodo fundamental de la señal periódica correspondiente en [s]. 
 
-mi_funcion=@(t) A*(my_unit_step(t)-my_unit_step(t-t_on));   %Manejador a una función anónima.
+mi_funcion=@(t) A*(escalon_unitario(t)-escalon_unitario(t-t_on));   %Manejador a una función anónima.
 
 t=0:T/100:10*T;                                             %Definición de la variable independiente.
                                                             %Crea un vector fila de tiempo [s].

@@ -7,13 +7,13 @@
 %
 %Observación: 
 %     Este laboratorio debe ir acompañado de los archivos: 
-%     my_signal_lab3.m
+%     senal_de_prueba.m
 %     crear_funcion_periodica.m
 %--------------------------------------------------------------------------
 close all                   %Cierra todas las ventanas.
 clear all                   %Borra todas las variables.
 clc                         %Limpia la consola.
-
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 
 
 
@@ -26,10 +26,10 @@ clc                         %Limpia la consola.
 h1 = figure; 
 set(gcf, 'color', 'white');    
 
-mi_funcion = @my_signal_lab3;  %Manejador de la función que define la función entre 0 y T.
+mi_funcion = @senal_de_prueba;  %Manejador de la función que define la función entre 0 y T.
 
 T=4.0;                         %Periodo fundamental en [s]. 
-                               %Note que el valor mínimo sin que se recorte la señale sería T=1 para my_signal_lab3.
+                               %Note que el valor mínimo sin que se recorte la señale sería T=1 para senal_de_prueba.
                                %Experimentar con diferentes valores de T,
                                %por ejemplo: 1, 1.5, 2.0, 0.5
 

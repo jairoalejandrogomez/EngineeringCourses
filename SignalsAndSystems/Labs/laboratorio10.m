@@ -10,11 +10,12 @@
 %Observación: 
 %     Este laboratorio debe ir acompañado de los archivos: 
 %     crear_funcion_periodica.m
-%     my_discrete_sequence.m
+%     secuencia_discreta.m
 %--------------------------------------------------------------------------
 close all                   
 clear all                   
-clc                         
+clc         
+addpath(genpath('./auxiliar/')); %Incluye la carpeta auxiliar en el path.
 %--------------------------------------------------------------------------
 %Definición de un período de la señal
 %--------------------------------------------------------------------------
@@ -31,7 +32,7 @@ N=4;             v=[0,1,2,1];                                                   
 %--------------------------------------------------------------------------
 %Creación de la señal periódica
 %--------------------------------------------------------------------------
-mi_funcion=@(n) my_discrete_sequence(v,n);             %Función anónima con parámetros extra. En este caso el vector v.
+mi_funcion=@(n) secuencia_discreta(v,n);             %Función anónima con parámetros extra. En este caso el vector v.
 n=0:1:10*N;                                            %Definición de la variable independiente.
                                                        %Crea un vector fila de muestras.
 y_periodica=crear_funcion_periodica(mi_funcion,N,n);   %Genera la señal períodica con periodo fundamental N. 

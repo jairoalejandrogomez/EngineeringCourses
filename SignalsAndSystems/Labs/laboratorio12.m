@@ -7,6 +7,7 @@
 close all
 clear all
 clc
+addpath(genpath('./audio/')); %Incluye la carpeta audio en el path.
 % %--------------------------------------------------------------------------
 % %Cómo grabar audio en Matlab y almacenarlo en un archivo .wav?
 % %--------------------------------------------------------------------------
@@ -24,7 +25,7 @@ clc
 %--------------------------------------------------------------------------
 %Cómo leer un archivo de audio?
 %--------------------------------------------------------------------------
-[x,fs] = audioread('audio_lab13.wav'); %Se Lee la señal de audio y guarda la frecuencia de muestreo en Hz.
+[x,fs] = audioread('audio_de_prueba.wav'); %Se Lee la señal de audio y guarda la frecuencia de muestreo en Hz.
 [n, num_canales]=size(x);              %Se determina el número de muestras y el de canales (1: mono, 2: estéreo)
                                        %Si es estéreo la primera columna en Matlab contiene el canal izquierdo, 
                                        %y la segunda columna contiene el canal derecho
