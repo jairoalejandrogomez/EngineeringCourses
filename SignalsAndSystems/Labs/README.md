@@ -1,5 +1,6 @@
-﻿
+
 --------------------------------------------------------------------------
+
 # Descripción de los laboratorios.
 
 --------------------------------------------------------------------------
@@ -27,7 +28,7 @@ Objetivos:
      de funciones definidas por segmentos.
 
 Observación: 
-     Este laboratorio debe ir acompañado del archivo: my_signal_lab3.m
+     Este laboratorio debe ir acompañado del archivo: senal_de_prueba.m
 
 --------------------------------------------------------------------------
 ### Laboratorio #4 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -37,9 +38,7 @@ Objetivos:
   2. Reconstruir una señal a partir de sus componentes par e impar.
 
 Observación: 
-     Este laboratorio debe ir acompañado de los archivos: 
-     my_signal_lab3.m
-     obtener_componente_par_e_impar_de_una_funcion.m
+     Este laboratorio debe ir acompañado de los archivos: senal_de_prueba; obtener_componente_par_e_impar_de_una_funcion.m
      
 --------------------------------------------------------------------------
 ### Laboratorio #5 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -62,7 +61,7 @@ Objetivos:
    1. Construir una señal períodica a partir de una señal aperiódica. 
    2. Analizar el comportamiento de la suma de señales periódicas.
 
-Observación: Este laboratorio debe ir acompañado de los archivos my_signal_lab3.m;    crear_funcion_periodica.m
+Observación: Este laboratorio debe ir acompañado de los archivos senal_de_prueba.m; crear_funcion_periodica.m
 
 --------------------------------------------------------------------------
 ### Laboratorio #8 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -71,7 +70,7 @@ Objetivos:
    1. Comprender los procesos involucrados en el cálculo de la 
       convolución entre dos señales.
 
-Observación: Este laboratorio debe ir acompañado de los archivos my_signal_lab3.m; funcion_rectangular.m
+Observación: Este laboratorio debe ir acompañado de los archivos senal_de_prueba; funcion_rectangular.m
 
 --------------------------------------------------------------------------
 ### Laboratorio #9 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -80,7 +79,7 @@ Objetivos:
    1. Explorar la representación en series de Fourier de una
       señal periódica en tiempo continuo.
 
-Observación: Este laboratorio debe ir acompañado de los archivos crear_funcion_periodica.m
+Observación: Este laboratorio debe ir acompañado de los archivos crear_funcion_periodica.m; escalon_unitario.m
 
 --------------------------------------------------------------------------
 ### Laboratorio #10 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -91,7 +90,7 @@ Objetivos:
    2. Analizar el espectro de magnitud y fase de una señal discreta,
       caracterizada por los coeficientes de Fourier.
 
-Observación: Este laboratorio debe ir acompañado de los archivos: crear_funcion_periodica.m; my_discrete_sequence.m
+Observación: Este laboratorio debe ir acompañado de los archivos: crear_funcion_periodica.m; secuencia_discreta.m
 
 --------------------------------------------------------------------------
 ### Laboratorio #11 en Matlab/Octave de la asignatura "señales y sistemas".
@@ -107,6 +106,8 @@ Objetivos:
 
 Objetivo: 
    1. Filtrar una señal de audio en el dominio de la frecuencia.
+ 
+Observación: Este laboratorio debe ir acompañado de los archivos: audio_de_prueba.wav
  
 --------------------------------------------------------------------------
 ### Laboratorio 13 en Matlab/Octave de la asignatura "señales y sistemas".
